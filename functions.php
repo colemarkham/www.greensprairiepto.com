@@ -31,13 +31,28 @@ function migration_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary', __( 'Primary Menu', 'migration' ) );
+	register_nav_menu( 'sidebar', __( 'Sidebar Menu', 'migration' ) );
 
 	// This theme uses a custom image size for featured images, displayed on "standard" posts.
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 500, 9999 ); // Unlimited height, soft crop
+	
+	add_theme_support( 'woocommerce' );
+	remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+	remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+	add_action('woocommerce_before_main_content', 'gppto_wrapper_start', 10);
+	add_action('woocommerce_after_main_content', 'gppto_wrapper_end', 10);
+
 }
 add_action( 'after_setup_theme', 'migration_setup' );
 
+function gppto_wrapper_start() {
+	echo '<section id="main">';
+}
+
+function gppto_wrapper_end() {
+	echo '</section>';
+}
 
 /**
  * Enqueues scripts and styles for front-end.

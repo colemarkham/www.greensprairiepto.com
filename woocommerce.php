@@ -7,11 +7,7 @@ get_header(); ?>
 <div class="container">
 	<div class="row">
 		<div class="col-sm-9">
-			<?php while ( have_posts() ) : the_post(); ?>
-			
-				<?php get_template_part( 'content' ); ?>
-				
-			<?php endwhile; ?>
+			<?php woocommerce_content(); ?>
 		</div>
 		
 		<?php get_sidebar(); ?>

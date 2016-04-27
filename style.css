@@ -1,10 +1,201 @@
 /*
-Theme Name: Migration
-Theme URI: [GitHub Link]
-Description: A base theme for porting an existing design to WordPress.
+Theme Name: Greens Prairie PTO
+Theme URI: https://github.com/colemarkham/gppto
+Description: Greens Prairie PTO theme converted to WordPress.
 Version: 1.0
-Author: Jonathan Wold
-Author URI: http://jonathanwold.com
+Author: Cole Markham
+Author URI: http://ccmcomputing.net
 */
 
-/* Styles go below */
+header {
+	padding: .8em;
+}
+.site-logo {
+	padding-bottom: .8em;
+}
+.tagline {
+	font-family: 'Courgette', 'Comic Sans MS', cursive;
+}
+.navbar {
+	background-image:none;
+}
+nav {
+	font-family: Georgia, Times, serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+nav.side-nav .nav-stacked a {
+	color: rgb(6, 81, 87);
+}
+nav.side-nav .nav-pills>li.active>a {
+	color: #fff;
+}
+nav.side-nav .nav-pills>li>a {
+	padding: 5px 8px;
+}
+nav.side-nav {
+	border-left: 1px solid #381b00;
+	margin-left: 10px;
+	padding-left: 20px;
+}
+nav.side-nav .text-info {
+	color: #BBB09F;
+}
+
+.input-group {
+	padding-bottom: 1.5em;
+}
+
+.sponsors img {
+	max-height: 120px;
+	padding-bottom: 1.5em;
+	margin: 0 auto;
+}
+.sponsors h2 > .label {
+	width: 95%;
+	margin: 0 auto 1.5em;
+	display: block;
+}
+
+.btn {
+	/* Remove button gradient for flat look */
+	background-image:none;
+}
+
+.monster-font {
+	font-family: 'Special Elite', cursive;
+}
+
+.frosty-font {
+	font-family: 'Special Elite', cursive;
+}
+
+.marketing h2 > .label {
+	width: 100%;
+	display: block;
+}
+
+.overlay {
+	background-color: rgba(80, 80, 80, 0.4);
+	padding: 20px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 80px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  margin-top: 20px;
+}
+
+/* Bootstrap Callouts from the Boostrap Docs 
+    as collected on http://cpratt.co/twitter-bootstrap-callout-css-styles/
+ */
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+.bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #777;
+}
+.bs-callout-primary {
+    border-left-color: #428bca;
+}
+.bs-callout-primary h4 {
+    color: #428bca;
+}
+.bs-callout-success {
+    border-left-color: #5cb85c;
+}
+.bs-callout-success h4 {
+    color: #5cb85c;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #5bc0de;
+}
+
+.list-group-item.disabled, .list-group-item.disabled:hover, .list-group-item.disabled:focus {
+	cursor: default;
+}
+
+.nav li img {
+	vertical-align: middle;
+}
+
+.frosty-list li {
+	line-height: 24px;
+	list-style: none;
+	background: url('img/snowflake-list.png') no-repeat left center;
+	padding-left:22px
+}
+
+.marketing .img-responsive {
+	margin: 0 auto;
+}
+
+.marketing .btn {
+	margin-top: 8px;
+}
+
+.quintessential {
+	font-family: 'Quintessential', cursive;
+}
+
+.courgette {
+	font-family: 'Courgette', cursive;
+}
+
+.marcellus {
+	font-family: 'Marcellus SC', serif;
+}
+
+.newscycle {
+	font-family: "News Cycle","Arial Narrow Bold",sans-serif;
+}

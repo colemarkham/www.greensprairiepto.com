@@ -9,14 +9,8 @@ get_header(); ?>
 
 	<article class="error404">
 	
-		<header>
-			<h1><?php _e( 'Whoops, this doesn\'t look right.', 'migration' ); ?></h1>
-		</header>
-
-		<div>
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'migration' ); ?></p>
-			<?php get_search_form(); ?>
-		</div>
+		<h1>Page not Found</h1>
+		<div class="alert alert-warning">This page you were trying to reach at this address doesn't seem to exist. This is usually the result of a bad or outdated link. We apologize for any inconvenience.</div>
 		
 	</article>
 

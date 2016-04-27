@@ -11,14 +11,18 @@
  */
 
 get_header(); ?>
-
-
-	<?php while ( have_posts() ) : the_post(); ?>
-	
-		<?php get_template_part( 'content' ); ?>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-9">
+			<?php while ( have_posts() ) : the_post(); ?>
+			
+				<?php get_template_part( 'content' ); ?>
+				
+			<?php endwhile; ?>
+		</div>
 		
-	<?php endwhile; ?>
-	
-		
-<?php get_sidebar(); ?>
+		<?php get_sidebar(); ?>
+	</div> <!-- /.row -->
+</div><!-- /.container -->
+
 <?php get_footer(); ?>
