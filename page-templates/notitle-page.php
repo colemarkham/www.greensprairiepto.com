@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Wrapped Content Template
+ * Template Name: No-Title Page Template
  *
- * Description: A page template that provides a wrapper for the content, useful for Woocommerce
+ * Description: A page template that does not include the title
  */
 
 get_header(); ?>
@@ -11,7 +11,7 @@ get_header(); ?>
 		<div class="col-sm-9">
 			<?php while ( have_posts() ) : the_post(); ?>
 			
-				<?php get_template_part( 'content-page' ); ?>
+				<?php get_template_part( 'content' ); ?>
 				
 			<?php endwhile; ?>
 		</div>
