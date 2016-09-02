@@ -29,18 +29,19 @@ get_header(); ?>
 		      <!-- Three columns of text below the carousel -->
 		      <div class="row">
 		        <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-1 text-center">
-		          <h2><span class="label label-primary">Spirit Nights</span></h2>
-				  <h4>Texas Roadhouse</h4>
-				  <a href="/spirit-nights"><img style="padding:5px" src='/img/sponsor/texas-roadhouse-logo.jpg' class="img-responsive" /></a>
-				  <p><strong>Monday, March 28th, 3&ndash;10 p.m.</strong></p>
-				  <div class="hidden-lg"><a class="btn btn-default" href="/spirit-nights" role="button">Learn more &raquo;</a></div>
+		          <h2><span class="label label-primary">School T-Shirts</span></h2>
+				  <h4>Order Online</h4>
+				  <a href="/school-t-shirts"><img style="padding:5px" src='/wp-content/uploads/2016/04/school-shirt-2016.png' class="img-responsive" width="200" height="200" /></a>
+				  <p><strong>Orders due Friday, August, 26th</strong></p>
+				  <div class="hidden-lg"><a class="btn btn-default" href="/school-t-shirts" role="button">Learn more &raquo;</a></div>
 		        </div><!-- /.col-lg-4 -->
 		        <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-1 text-center">
-		          <h2><span class="label label-primary">Upcoming Events</span></h2>
-				  <h4>5th Annual Mustang Rodeo</h4>
-				  <a href="/rodeo"><img style="padding:5px" src='/img/rodeo-logo-2016.png' width="200" height="200" /></a>
-				  <p><strong>April 2nd</strong></p>
-		          <div class="hidden-lg"><a class="btn btn-default" href="/rodeo" role="button">View details &raquo;</a></div>
+		          <h2><span class="label label-primary">Fundraising</span></h2>
+				  <h4>Boosterthon</h4>
+				  <a href="/boosterthon"><img class="img-responsive" style="padding:5px" src='/wp-content/uploads/2016/07/boosterthon.png' width="200" height="200" /></a>
+				  <p><strong>Pep rally September 6th</strong></p>
+				  <p><strong>Glow run September 16th</strong></p>
+		          <div class="hidden-lg"><a class="btn btn-default" href="/boosterthon" role="button">Learn more &raquo;</a></div>
 			  
 		        </div><!-- /.col-lg-4 -->
 		        <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-1 text-center">
@@ -52,10 +53,10 @@ get_header(); ?>
 		      </div><!-- /.row -->
 		      <div class="row visible-lg">
 		        <div class="col-lg-4 text-center">
-		          <div><a class="btn btn-default" href="/spirit-nights" role="button">Learn more &raquo;</a></div>
+		          <div><a class="btn btn-default" href="/school-t-shirts" role="button">Learn more &raquo;</a></div>
 		        </div><!-- /.col-lg-4 -->
 		        <div class="col-lg-4 text-center">
-		          <div><a class="btn btn-default" href="/rodeo" role="button">View details &raquo;</a></div>
+		          <div><a class="btn btn-default" href="/boosterthon" role="button">Learn more &raquo;</a></div>
 		        </div><!-- /.col-lg-4 -->
 		        <div class="col-lg-4 text-center">
 		          <div><a class="btn btn-default" href="/parent-patrol" role="button">Learn more &raquo;</a></div>
