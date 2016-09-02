@@ -4,7 +4,9 @@
  */
 
 get_header(); ?>
-
+<div class="container">
+	<div class="row">
+		<div class="col-sm-9">
 
 	<?php if ( have_posts() ) : ?>
 
@@ -30,5 +32,10 @@ get_header(); ?>
 	<?php endif; ?>
 
 
-<?php get_sidebar(); ?>
+</div>
+		
+		<?php get_sidebar(); ?>
+	</div> <!-- /.row -->
+</div><!-- /.container -->
+
 <?php get_footer(); ?>

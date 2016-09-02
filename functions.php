@@ -37,22 +37,13 @@ function migration_setup() {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 500, 9999 ); // Unlimited height, soft crop
 	
+	// Declare support for woocommerce
 	add_theme_support( 'woocommerce' );
-	remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
-	remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
-	add_action('woocommerce_before_main_content', 'gppto_wrapper_start', 10);
-	add_action('woocommerce_after_main_content', 'gppto_wrapper_end', 10);
 
+	// Let WP handle titles
+	add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'migration_setup' );
-
-function gppto_wrapper_start() {
-	echo '<section id="main">';
-}
-
-function gppto_wrapper_end() {
-	echo '</section>';
-}
 
 /**
  * Enqueues scripts and styles for front-end.
