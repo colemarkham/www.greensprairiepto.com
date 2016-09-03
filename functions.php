@@ -42,6 +42,7 @@ function migration_setup() {
 
 	// Let WP handle titles
 	add_theme_support( 'title-tag' );
+	
 }
 add_action( 'after_setup_theme', 'migration_setup' );
 
@@ -63,3 +64,51 @@ function migration_scripts_styles() {
 	//$wp_styles->add_data( 'migration-ie', 'conditional', 'lt IE 9' );
 }
 add_action( 'wp_enqueue_scripts', 'migration_scripts_styles' );
+
+
+// register custom post type 'my_custom_post_type'
+add_action( 'init', 'create_custom_post_types' );
+function create_custom_post_types() {
+	register_post_type( 'feature',
+			array(
+					'labels' => array( 'name' => __( 'Features' ), 'singular_name' => __('Feature') ),
+					'supports' => array('title','thumbnail'),
+					'public' => true
+			)
+			);
+}
+
+
+add_filter( 'rwmb_meta_boxes', 'custom_meta_boxes' );
+function custom_meta_boxes( $meta_boxes ) {
+	$meta_boxes[] = array(
+			'title'      => __( 'Feature Content' ),
+			'post_types' => 'feature',
+			'fields'     => array(
+					array(
+							'id'   => 'subtitle',
+							'name' => __( 'Subtitle' ),
+							'type' => 'text',
+					),
+					array(
+							'id'      => 'page',
+							'name'    => __( 'Page' ),
+							'type'    => 'post',
+							'post_type'   => 'page',
+							'field_type'  => 'select_advanced',
+					),
+					array(
+							'id'   => 'message',
+							'name' => __( 'Message' ),
+							'type' => 'text',
+					),
+					array(
+							'id'   => 'button-text',
+							'name' => __( 'Button Text' ),
+							'type' => 'text',
+							'std' => __( 'Learn more' ),
+					),
+			),
+	);
+	return $meta_boxes;
+}
